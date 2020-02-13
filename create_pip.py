@@ -42,19 +42,17 @@ def main(mirror):
 
 if __name__ == '__main__':
     print('请选择国内镜像源（输入序号）\n1、清华源\n2、阿里云源\n3、豆瓣源')
-    while True:
-        num = input('在这后面输入：')
-        if num in '123':
-            if num == '1':
-                opt = 'qinghua'
-            elif num == '2':
-                opt = 'aliyun'
-            else:
-                opt = 'douban'
-        else:
-            print('由于你选择的序号不符合规格，默认为你设置为清华源，如需重新修改，请重新执行该文件')
+    num = input('在这后面输入：')
+    if num in '123':
+        if num == '1':
             opt = 'qinghua'
-        print('------------------------------------------------------------------------')
-        break
+        elif num == '2':
+            opt = 'aliyun'
+        else:
+            opt = 'douban'
+    else:
+        print('由于你选择的序号不符合规格，默认为你设置为清华源，如需重新修改，请重新执行该文件')
+        opt = 'qinghua'
+    print('------------------------------------------------------------------------')
 
     main(opt)
