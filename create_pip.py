@@ -1,4 +1,4 @@
-# @Time    : 2020/1/23 11:58
+# @Time    : 2020/6/24 14:24
 # @Author  : Hugh
 # @Email   : 609799548@qq.com
 
@@ -11,7 +11,7 @@ mirrors = {
 
     "qinghua": ['[global]', 'index-url = https://pypi.tuna.tsinghua.edu.cn/simple',
                 '[install]', 'trusted-host=pypi.tuna.tsinghua.edu.cn'],
-    'aliyun': ['[global]', 'index-url = http://mirrors.aliyun.com/pypi/simple/',
+    'aliyun': ['[global]', 'index-url = https://mirrors.aliyun.com/pypi/simple',
                '[install]', 'trusted-host=mirrors.aliyun.com'],
     'douban': ['[global]', 'index-url = https://pypi.doubanio.com/simple/',
                '[install]', 'trusted-host=pypi.doubanio.com']
