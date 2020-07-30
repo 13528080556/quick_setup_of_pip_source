@@ -26,7 +26,7 @@ def main(mirror):
         pip_ini = os.path.join(pip_dir, 'pip.ini')
     else:
         pip_dir = os.path.join(user_home, '.pip')
-        pip_ini = os.path.join(user_home, 'pip.conf')
+        pip_ini = os.path.join(pip_dir, 'pip.conf')
 
     if not os.path.exists(pip_dir):
         os.mkdir(pip_dir)
